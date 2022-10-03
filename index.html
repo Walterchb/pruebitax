@@ -1,0 +1,28 @@
+import 'package:getwidget/getwidget.dart';
+
+  GFCard(
+            boxFit: BoxFit.cover,
+            titlePosition: GFPosition.start,
+            showOverlayImage: true,
+            imageOverlay: AssetImage(
+              'your asset image',
+            ),
+            title: GFListTile(
+              avatar: GFAvatar(),
+              titleText: 'Game Controllers',
+              subTitleText: 'PlayStation 4',
+            ),
+            content: Text("Some quick example text to build on the card"),
+            buttonBar: GFButtonBar(
+              children: <Widget>[
+                GFAvatar(
+                  backgroundColor: GFColors.PRIMARY,
+                  child: Icon(
+                    Icons.share,
+                    color: Colors.white,
+                  ),
+                ),
+
+              ],
+            ),
+          ),
